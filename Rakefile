@@ -1,7 +1,7 @@
-require 'pry'
+
 
 desc 'loads pry console'
-task :pry do
+task :console => :environment
   binding.pry
 end
 
