@@ -2,7 +2,8 @@
 
 desc 'loads pry console'
 task :console => :environment
-  binding.pry
+do
+  Pry.start
 end
 
 namespace :greeting do 
